@@ -1,0 +1,11 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Parent to Child Using Public method" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+        <c-child-public-method></c-child-public-method>
+        <lightning-button variant="brand" label="Call Publicmethod" onclick={handleClick}></lightning-button><br /><br/>
+        <lightning-button variant="brand" label="Publicmethod with Params" onclick={handleMethod}></lightning-button>
+   </div>
+    </lightning-card>
+
+  
+</template>

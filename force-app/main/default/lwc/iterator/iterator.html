@@ -1,0 +1,16 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Iterator" icon-name="standard:contact">
+        <div class="slds-p-horizontal_small">
+            <template if:true={contacts}>
+                <template iterator:it={contacts}>
+                    <ul key={it.value.Id}>
+                        <div if:true={it.first} class="fir"></div>
+                            {it.value.Name}
+                        <div if:true={it.last} class="las"></div>
+                    </ul>
+                </template>
+            </template>
+        
+        </div>
+    </lightning-card>    
+</template>

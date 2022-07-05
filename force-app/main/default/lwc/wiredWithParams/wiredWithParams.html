@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Wired with Param" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+            <lightning-input type="text"  value={str} label="Enter text to Search" onchange={handleChange}></lightning-input><br />
+            <template if:true={result}>
+                <template for:each={result} for:item="acc">
+                    {acc.Name}
+                </template>
+            </template>
+            <template if:false={result}>
+                No matching accounts records
+            </template>
+        </div>
+    </lightning-card>
+</template>

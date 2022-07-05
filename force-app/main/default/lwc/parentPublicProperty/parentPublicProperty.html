@@ -1,0 +1,11 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Parent to Child communication Using Public properties" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+            <template if:true={contact}>
+                <template for:each={contact} for:item="con">
+                    <c-child-public-property contacts={con} key={con.Id}></c-child-public-property>
+                </template>
+            </template>
+        </div>
+    </lightning-card>    
+</template>

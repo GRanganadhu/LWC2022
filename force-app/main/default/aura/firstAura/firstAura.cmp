@@ -1,0 +1,3 @@
+<aura:component>
+    <c:firstLwc message="Message from Aura" onsample="{!c.handleCustomEvent}" aura:id="child"/>
+</aura:component>	

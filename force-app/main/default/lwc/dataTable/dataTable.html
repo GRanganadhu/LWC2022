@@ -1,0 +1,17 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+     
+        <div class="slds-p-horizontal_small">
+            <lightning-datatable
+                key-field="id"
+                data={results}
+                show-row-number-column
+                row-number-offset={rowOffset}
+                hide-checkbox-column
+                columns={column}
+                onrowaction={handleRowAction}>
+            </lightning-datatable>
+        </div>
+   
+    </lightning-card>
+</template>

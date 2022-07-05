@@ -1,0 +1,11 @@
+<template>
+  <lightning-card  variant="Narrow"  title="Imperative Call" icon-name="standard:account">
+    <div class="slds-p-horizontal_small">
+        <lightning-input type="text" label="Name" onchange={handleChange}></lightning-input><br />
+        <lightning-button variant="brand" label="Get Accounts" onclick={handleClick}></lightning-button><br />
+        <template for:each={result} for:item="acc">
+            {acc.Name}
+        </template>
+    </div>
+  </lightning-card>  
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  variant="Narrow"  title="For Each" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+            <template if:true={contacts}>
+                <template for:each={contacts} for:item="con">
+                    <p key={con.Id}>Id:{con.Id}, Name:{con.Name}</p>
+                </template>
+            </template>
+        
+        </div>
+    </lightning-card>    
+</template>
